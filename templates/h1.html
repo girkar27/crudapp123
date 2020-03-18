@@ -1,0 +1,38 @@
+<html>
+  <body>
+    <h1>Students</h1>
+    <form method="POST" action="/">
+      <label>Add Entry<label/><input type="text" name="firstname"  placeholder="First Name" required/>
+                              <input type="text" name="lastname"  placeholder="Last Name" required/>
+                              <input type="text" name="age"  placeholder="Age" required/>
+      <br/><br/>
+      <input type="submit" value="Add"/>
+        <br/><br/>
+    </form>
+
+     <label>Update Entry<label/>
+     <br/><br/>
+
+    <form method="POST" action="./update" style="display: inline">
+              <input type="text"  name="oldfirstname" placeholder="old value(firstname)"/>
+              <input type="text"  name="oldfirstnamelastname" placeholder="old value(lastname)" />
+              <input type="text"  name="old_age" placeholder="old value(age)" />
+              <br/><br/>
+              <input type="text"  name="newfirstname" placeholder="new value(firstname)" required/>
+              <input type="text"  name="newlastname" placeholder="new value(lastname)" required/>
+              <input type="text"  name="new_age" placeholder="new value(age)" required/>
+              <br/><br/>
+              <input type="submit" name="Update" value="Update">
+            </form>
+            <br/><br/>
+
+            <label>Delete Entry<label/>
+            <br/><br/>
+            <form method="POST" action="./delete" style="display: inline">
+              <input type="text"  name="id" placeholder="delete"/>
+              <br/><br/>
+              <input type="submit" name="Delete" value="Delete">
+            </form>
+
+  </body>
+</html>
